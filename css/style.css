@@ -53,14 +53,32 @@ main{
 .container{
     margin: 0 auto;
     width: 1700px;
-}
-.users{
     display: flex;
     flex-wrap: wrap;
 }
+.users{
+    
+    
+    
+}
 .user{
     margin: 10px;
-    width: calc(100% / 7 - 20px);
+    width: calc((100% - 20px) /7);
+    position: relative;
+}
+
+.user img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.info span{
+    background-color: #596875;
+    opacity: 0,5;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding: 7px;
 }
 /*
 *********
@@ -70,11 +88,12 @@ FOOTER
 footer{
     background-color: #222222;
     height: 80px;
+    
 }
 
 .option{
-    padding: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
@@ -84,15 +103,18 @@ footer{
 }
 
 .option>video{
-    display: flex;    
+    width: 20%;
+    display: flex; 
+       
 }
 .ending{
-    width: 114px;
-    height: 100%;
+    height: 80px;
+    background-color: #4a4a4a;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .ending span{
     text-align: center;
-    background-color: #4a4a4a;
     color: red;
-    
 }
